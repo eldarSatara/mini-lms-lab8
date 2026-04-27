@@ -6,7 +6,16 @@
         "title": "Creational Patterns",
         "lessons": [
           { "title": "Factory Method" },
-          { "title": "Singleton" }
+          { "title": "Singleton" },
+          { "title": "Builder" }
+        ]
+      },
+      {
+        "title": "Structural Patterns",
+        "lessons": [
+          { "title": "Facade" },
+          { "title": "Adapter" },
+          { "title": "Composite" }
         ]
       }
     ]
@@ -18,7 +27,28 @@
         "title": "Frontend",
         "lessons": [
           { "title": "HTML Basics" },
+          { "title": "CSS Basics" },
           { "title": "JavaScript Basics" }
+        ]
+      },
+      {
+        "title": "Backend",
+        "lessons": [
+          { "title": "PHP Basics" },
+          { "title": "Routing Concepts" },
+          { "title": "APIs" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Software Engineering",
+    "modules": [
+      {
+        "title": "Architecture",
+        "lessons": [
+          { "title": "MVC Pattern" },
+          { "title": "Layered Architecture" }
         ]
       }
     ]

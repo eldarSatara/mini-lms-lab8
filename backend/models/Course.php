@@ -1,5 +1,5 @@
 <?php
-require_once "CourseComponent.php";
+require_once __DIR__ . "/CourseComponent.php";
 
 class Course implements CourseComponent {
     private $title;
