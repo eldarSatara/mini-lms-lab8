@@ -49,3 +49,27 @@ if (isset($_GET['action']) && $_GET['action'] === 'progress') {
 
     echo json_encode($enrollment->getProgress());
 }
+
+if (isset($_GET['action']) && $_GET['action'] === 'createCourse') {
+
+    $title = $_POST['title'];
+
+    $data = json_decode(file_get_contents(__DIR__ . "/data.json"), true);
+
+    $data[] = [
+        "title" => $title,
+        "modules" => [
+            [
+                "title" => "New Module",
+                "lessons" => [
+                    ["title" => "New Lesson"]
+                ]
+            ]
+        ]
+    ];
+
+    file_put_contents(__DIR__ . "/data.json", json_encode($data, JSON_PRETTY_PRINT));
+
+    echo json_encode(["message" => "Course created"]);
+    exit;
+}

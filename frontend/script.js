@@ -37,3 +37,19 @@ function enroll(course) {
         enrolledList.appendChild(li);
     });
 }
+
+function createCourse() {
+    const title = document.getElementById("courseTitle").value;
+
+    fetch("http://localhost:8000/backend/index.php?action=createCourse", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: `title=${title}`
+    })
+    .then(res => res.json())
+    .then(() => {
+        location.reload(); // simplest safe refresh
+    });
+}
