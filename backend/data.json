@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Design Patterns",
+    "modules": [
+      {
+        "title": "Creational Patterns",
+        "lessons": [
+          { "title": "Factory Method" },
+          { "title": "Singleton" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Web Development",
+    "modules": [
+      {
+        "title": "Frontend",
+        "lessons": [
+          { "title": "HTML Basics" },
+          { "title": "JavaScript Basics" }
+        ]
+      }
+    ]
+  }
+]
