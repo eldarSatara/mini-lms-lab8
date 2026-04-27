@@ -38,6 +38,34 @@
 
 </div>
 
+<!-- Add Course Button -->
+<button class="btn btn-dark mb-3" data-bs-toggle="modal" data-bs-target="#courseModal">
+    + Add Course
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="courseModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Create Course</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <input type="text" id="courseTitle" class="form-control" placeholder="Course title">
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="createCourse()">Save</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
