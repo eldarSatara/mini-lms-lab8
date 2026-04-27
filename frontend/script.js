@@ -8,6 +8,7 @@ fetch("http://localhost:8000/backend/index.php?action=courses")
             const div = document.createElement("div");
             div.innerHTML = `
                 <h3>${course.title}</h3>
+                <pre>${course.structure}</pre>
                 <button onclick="enroll('${course.title}')">Enroll</button>
             `;
             coursesDiv.appendChild(div);
